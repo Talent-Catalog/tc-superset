@@ -1,5 +1,5 @@
 # tc-superset
-Talent Catalog use of Apache Superset
+Talent Catalog use of Apache Superset (same technology as used by Superset)
 
 ## Building and uploading a Superset image to Amazon AWS
 
