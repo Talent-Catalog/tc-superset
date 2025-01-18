@@ -27,5 +27,5 @@ USER superset
 EXPOSE 8088
 
 # Initialize superset - creating default admin user
-#ENTRYPOINT [ "/app/superset-init.sh" ]
+ENTRYPOINT [ "/app/superset-init.sh" ]
 
