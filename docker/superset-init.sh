@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # create Admin user, you can read these values from env or anywhere else possible
 superset fab create-admin --username "admin" --firstname Superset --lastname Admin --email "john@cameronfoundation.org" --password "admin"
@@ -10,4 +10,4 @@ superset db upgrade
 superset superset init
 
 # Starting server
-/bin/sh -c /usr/bin/run-server.sh
+/bin/bash -c /usr/bin/run-server.sh
