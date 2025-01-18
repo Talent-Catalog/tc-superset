@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # create Admin user, you can read these values from env or anywhere else possible
 superset fab create-admin --username "admin" --firstname Superset --lastname Admin --email "john@cameronfoundation.org" --password "admin"

@@ -14,6 +14,9 @@ COPY superset_config.py /app/pythonpath/superset_config.py
 # Copy my start up
 COPY superset-init.sh /app/superset-init.sh
 
+# Copy our logo
+COPY tc-logo.png /app/superset/static/assets/images/tc-logo.png
+
 # Ensure the script is executable
 RUN chmod +x /app/superset-init.sh
 
@@ -24,5 +27,5 @@ USER superset
 EXPOSE 8088
 
 # Initialize superset - creating default admin user
-ENTRYPOINT [ "/app/superset-init.sh" ]
+#ENTRYPOINT [ "/app/superset-init.sh" ]
 
