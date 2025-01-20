@@ -14,11 +14,13 @@ COPY superset_config.py /app/pythonpath/superset_config.py
 # Copy my start up
 COPY superset-init.sh /app/superset-init.sh
 
+# Ensure the script is executable
+RUN chmod +x /app/superset-init.sh
+
 # Copy our logo
 COPY tc-logo.png /app/superset/static/assets/images/tc-logo.png
 
-# Ensure the script is executable
-RUN chmod +x /app/superset-init.sh
+#RUN chown superset /app/superset/static/assets/images/tc-logo.png
 
 # Switch back to the superset user
 USER superset
