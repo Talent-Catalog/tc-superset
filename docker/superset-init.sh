@@ -10,4 +10,4 @@ superset db upgrade
 superset superset init
 
 # Starting server
-/bin/sh -c /usr/bin/run-server.sh
+/bin/bash -c /usr/bin/run-server.sh
