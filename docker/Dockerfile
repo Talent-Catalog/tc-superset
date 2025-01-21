@@ -20,8 +20,6 @@ RUN chmod +x /app/superset-init.sh
 # Copy our logo
 COPY tc-logo.png /app/superset/static/assets/images/tc-logo.png
 
-#RUN chown superset /app/superset/static/assets/images/tc-logo.png
-
 # Switch back to the superset user
 USER superset
 
