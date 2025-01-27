@@ -12,6 +12,15 @@ SECRET_KEY = "NQU3OL6QGiyHVm8pEjMPDKSmIYqNE89tB3Bm41Cj8wZ36WP3fifiVRaM"
 APP_NAME = "Talent Catalog Portal"
 BRAND_NAME = "Talent Catalog"
 APP_ICON = "/static/assets/images/tc-logo.png"
+FAVICONS = [
+  {
+    "href": "/static/assets/images/tc-favicon.png",
+    "sizes": "134x134",
+    "type": "image/png",
+    "rel": "icon"
+  }
+]
+
 
 import logging
 import os

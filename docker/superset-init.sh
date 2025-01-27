@@ -9,5 +9,7 @@ superset db upgrade
 # setup roles and permissions
 superset superset init
 
+#todo Need to start Celery
+
 # Starting server
 /bin/bash -c /usr/bin/run-server.sh

@@ -17,8 +17,9 @@ COPY superset-init.sh /app/superset-init.sh
 # Ensure the script is executable
 RUN chmod +x /app/superset-init.sh
 
-# Copy our logo
-COPY tc-logo.png /app/superset/static/assets/images/tc-logo.png
+# Copy our logo and favicon
+COPY tc-logo-with-name.png /app/superset/static/assets/images/tc-logo.png
+COPY tc-favicon.png /app/superset/static/assets/images/tc-favicon.png
 
 # Switch back to the superset user
 USER superset
