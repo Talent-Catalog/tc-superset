@@ -2,6 +2,19 @@
 Talent Catalog use of Apache Superset (same technology as used by Sopact)
 
 https://superset.apache.org/
+                                            
+## To Do
+
+Work on this has been suspended for now as we evaluate using [Preset.io](https://preset.io/) to
+host Superset for us.
+
+If we come back to doing the hosting ourselves, the following work should be done:
+
+* Configure Superset to connect to REDIS host - https://superset.apache.org/docs/configuration/cache/
+* Configure Celery to be used by Superset (for async processing)
+* Add two factor authentication (2FA) - so that we can avoid sharing of usernames. Or move to OAUTH
+* Look at errors currently logged at start up and resolve them.
+
 
 ## Building and uploading a Superset image to Amazon AWS
 
